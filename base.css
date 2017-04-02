@@ -1,0 +1,105 @@
+/****************LAYOUT***************/
+
+html,
+body {
+    height: 100%;
+}
+
+
+/*** NAVBAR ***/
+
+.navbar-transparent {
+    background-color: transparent;
+    text-transform: uppercase;
+    letter-spacing: .2em;
+}
+
+.navbar-brand {
+    height: 3em;
+}
+.navbar-brand > img {
+    height: 100%;
+}
+
+.nav-right {
+    padding: .5em;
+}
+
+.navbar-side {
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: 25%;
+    background-color: #f7f7f9;
+    padding: 5%;
+    list-style: none;
+    -webkit-transform: translateX(100%);
+    -ms-transform: translateX(100%);
+    transform: translateX(100%);
+    -webkit-transition: 300ms ease;
+    transition: 300ms ease;
+}
+
+.navbar-side-item {
+    margin: 1.5rem 0;
+}
+.toggleSide {
+    -webkit-transform: translateX(0%);
+    -ms-transform: translateX(0%);
+    transform: translateX(0%);
+    -webkit-transition: 300ms ease;
+    transition: 300ms ease;
+}
+
+/***************INDEX****************/
+
+.mask {
+    background: url("pineapple.jpg") no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+    cursor: default;
+}
+
+@media (max-width: 750px) {
+    .mask {
+        background-attachment: scroll;
+    }
+}
+
+.mask-text {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 2em;
+}
+
+.item {
+    margin-top: 50px;
+}
+.item img {
+    width: 300px;
+}
+
+
+/*** RECENT ***/
+
+.divider {
+    text-align: center;
+    padding:20px;
+}
+.card {
+    border: none;
+    border-radius: 0;
+    margin-bottom: 20px;
+    -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    -moz-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
