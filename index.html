@@ -2,67 +2,113 @@
 <html>
 
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <title>Minimalist</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
-    <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+
+
 
     <link rel="stylesheet" href="base.css">
 </head>
 
 <body>
     <!-- NAVBAR -->
-    <nav class="navbar navbar-transparent navbar-light fixed-top">
-        <div class="container">
-            <div class="float-left">
-                <a class="navbar-brand" href="#">
-                    <img class="img-fluid" src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/Logo_TV_2015.svg/2000px-Logo_TV_2015.svg.png">
-                </a>
-            </div>
-            <div class="float-right nav-right">
-                <button class="navbar-toggler pull-xs-right" id="sideToggle" type="button">
-                    &#9776;
-                </button>
-            </div>
+    <nav class="navbar navbar-toggleable-md transparent navbar-light bg-faded fixed-top">
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+        <a class="navbar-brand" href="#">Navbar</a>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Link</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link disabled" href="#">Disabled</a>
+                </li>
+            </ul>
         </div>
-
-        <!-- navbar-side -->
-
-        <ul class="navbar-side" id="navbarSide">
-            <li>
-                <button type="button" class="close" aria-label="Close">
-                    <span aria-hidden="true">&times;</span>
-                </button>
-            </li>
-            <li class="navbar-side-item">
-                <a href="#" class="side-link">About</a>
-            </li>
-            <li class="navbar-side-item">
-                <a href="#" class="side-link">Contact</a>
-            </li>
-        </ul>
-
     </nav>
     <!-- END NAVBAR -->
 
     <!-- INTRO HEADER -->
-    <div class="mask">
-        <div class="mask-text">
+    <div class="masthead"></div>
+    <section id="header">
+        <div class="masthead-content">
             <div class="container">
                 <h1>Erika Gray</h1>
                 <h6>Photography</h6>
             </div>
         </div>
-    </div>
+    </section>
     <!-- END INTRO HEADER -->
 
+
+    <!-- ABOUT -->
+    <section id="about">
+        <div class="container divider">
+            <div class="row">
+                <div class="col-12">
+                    <h2>
+                        <a href="#">Portraits</a> •
+                        <a href="#">Weddings</a> •
+                        <a href="#">Family</a> •
+                        <a href="#">Maternity</a> •
+                        <a href="#">Newborns</a>
+                    </h2>
+                    <hr>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact">
+        <div class="container divider">
+            <h2>Contact us today to get a free quote!</h2>
+            <br>
+            <br>
+            <div class="row">
+                <div class="col-4">
+                    <a href="tel:55555555555">
+                        <i class="fa fa-phone fa-3x" aria-hidden="true"></i>
+                        <h2>Give us a call.</h2>
+                        <p>(555) 555-5555</p>
+                    </a>
+                </div>
+                <div class="col-4">
+                    <a href="mailto:someone@example.com">
+                        <i class="fa fa-envelope-o fa-3x" aria-hidden="true"></i>
+                        <h2>Shoot us an email.</h2>
+                        <p>us@example.com</p>
+                    </a>
+                </div>
+                <div class="col-4">
+                    <a href="http://maps.google.com/?q=1600 Pennsylvania Ave NW, Washington, DC, 20500" target="_blank">
+                        <i class="fa fa-map-marker fa-3x" aria-hidden="true"></i>
+                        <h2>Stop by our office.</h2>
+                        <p>1600 Pennsylvania Ave NW<br>Washington, DC 20500</p>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- RECENT Projects -->
     <section id="recent">
         <div class="container divider">
             <div class="row">
                 <div class="col-12">
-                    <h2>Recent Works</h2>
+                    <h2>Recent Projects</h2>
                 </div>
             </div>
         </div>
@@ -71,7 +117,7 @@
             <div class="row">
                 <div class="col-6 col-md-3">
                     <div class="card">
-                        <img class="card-img-top img-fluid" src="https://static.pexels.com/photos/139259/pexels-photo-139259.jpeg" alt="Card image cap">
+                        <img class="card-img-top img-fluid" src="img/pineapple1.jpeg" alt="Card image cap">
                         <div class="card-block">
                             <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                         </div>
@@ -79,7 +125,7 @@
                 </div>
                 <div class="col-6 col-md-3">
                     <div class="card">
-                        <img class="card-img-top img-fluid" src="https://static.pexels.com/photos/36187/pexels-photo.jpg" alt="Card image cap">
+                        <img class="card-img-top img-fluid" src="img/pineapple2.jpeg" alt="Card image cap">
                         <div class="card-block">
                             <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                         </div>
@@ -87,7 +133,7 @@
                 </div>
                 <div class="col-6 col-md-3">
                     <div class="card">
-                        <img class="card-img-top img-fluid" src="https://static.pexels.com/photos/137141/pexels-photo-137141.jpeg" alt="Card image cap">
+                        <img class="card-img-top img-fluid" src="img/pineapple3.jpg" alt="Card image cap">
                         <div class="card-block">
                             <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                         </div>
@@ -95,7 +141,7 @@
                 </div>
                 <div class="col-6 col-md-3">
                     <div class="card">
-                        <img class="card-img-top img-fluid" src="https://static.pexels.com/photos/27269/pexels-photo-27269.jpg" alt="Card image cap">
+                        <img class="card-img-top img-fluid" src="img/pineapple4.jpg" alt="Card image cap">
                         <div class="card-block">
                             <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                         </div>
@@ -106,7 +152,7 @@
             <div class="row">
                 <div class="col-6 col-md-3">
                     <div class="card">
-                        <img class="card-img-top img-fluid" src="https://static.pexels.com/photos/174658/pexels-photo-174658.jpeg" alt="Card image cap">
+                        <img class="card-img-top img-fluid" src="img/pineapple5.jpeg" alt="Card image cap">
                         <div class="card-block">
                             <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                         </div>
@@ -114,7 +160,7 @@
                 </div>
                 <div class="col-6 col-md-3">
                     <div class="card">
-                        <img class="card-img-top img-fluid" src="https://static.pexels.com/photos/47454/pexels-photo-47454.jpeg" alt="Card image cap">
+                        <img class="card-img-top img-fluid" src="img/pineapple6.jpeg" alt="Card image cap">
                         <div class="card-block">
                             <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                         </div>
@@ -122,7 +168,7 @@
                 </div>
                 <div class="col-6 col-md-3">
                     <div class="card">
-                        <img class="card-img-top img-fluid" src="https://static.pexels.com/photos/32303/pexels-photo.jpg" alt="Card image cap">
+                        <img class="card-img-top img-fluid" src="img/pineapple7.jpg" alt="Card image cap">
                         <div class="card-block">
                             <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                         </div>
@@ -130,18 +176,26 @@
                 </div>
                 <div class="col-6 col-md-3">
                     <div class="card">
-                        <img class="card-img-top img-fluid" src="https://static.pexels.com/photos/136050/pexels-photo-136050.jpeg" alt="Card image cap">
+                        <img class="card-img-top img-fluid" src="img/pineapple8.jpeg" alt="Card image cap">
                         <div class="card-block">
                             <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                         </div>
                     </div>
                 </div>
             </div>
-
-
         </div>
     </section>
+    
+    <footer class="footer">
+      <div class="container">
+        <span class="text-muted">Minimalist by <a href="#">VASH Development</a></span>
+      </div>
+    </footer>
+
     <script src="base.js"></script>
+    <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
 
 </body>
 
